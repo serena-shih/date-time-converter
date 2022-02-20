@@ -1,26 +1,39 @@
 <!DOCTYPE html>
+<style>
+    body{
+        font-size: 4vh;
+        font-family: Geneva;
+        color: #448d7f;
+        justify-content: center;
+    }
+
+    .calendar {
+        font-size: 2vh;
+        color: #283e46;
+    }
+</style>
 <html>
     <head>
-      <h1>Date and Time Converter</h1>
-      <h2>By Roof Combination</h2>
+      <h1 style="color: #fc5c0d;">Date and Time Converter</h1>
+      <h2 style="color: #93d0c2;">By Roof Combination (Kat, Parmis, Serena, Zeel)</h2>
     </head>
     <body>
-      <h2>Calendar</h2>
-      <h3>Date 1 (Gregorian)</h3>
+      <h2 style="color: #fc5c0d;">Calendar</h2>
+      <hlabel for="your-date">Your date in the Gregorian Calender:</label>
 
       <select class="calendar" name="month" id="month">
-          <option value="1">January</option>
-          <option value="2">February</option>
-          <option value="3">March</option>
-          <option value="4">April</option>
-          <option value="5">May</option>
-          <option value="6">June</option>
-          <option value="7">July</option>
-          <option value="8">August</option>
-          <option value="9">September</option>
-          <option value="10">October</option>
-          <option value="11">November</option>
-          <option value="12">December</option>
+          <option value="1" onClick = "selectMonth(1);">January</option>
+          <option value="2" onClick = "selectMonth(2);">February</option>
+          <option value="3" onClick = "selectMonth(3);">March</option>
+          <option value="4" onClick = "selectMonth(4);">April</option>
+          <option value="5" onClick = "selectMonth(5);">May</option>
+          <option value="6" onClick = "selectMonth(6);">June</option>
+          <option value="7" onClick = "selectMonth(7);">July</option>
+          <option value="8" onClick = "selectMonth(8);">August</option>
+          <option value="9" onClick = "selectMonth(9);">September</option>
+          <option value="10" onClick = "selectMonth(10);">October</option>
+          <option value="11" onClick = "selectMonth(11);">November</option>
+          <option value="12" onClick = "selectMonth(12);">December</option>
       </select>
 
       <select class="calendar" name="day" id="day">
@@ -140,15 +153,16 @@
           <option value="2029">2029</option>
           <option value="2030">2030</option>
       </select>
-
-      <h3>Date 2</h3>
-
+    <div>
       <label for="calendar-type">Choose a calendar type to convert to:</label>
-      <select name="calendar" id="calendar">
+      <select class="calendar" name="calendar" id="calendar">
             <option value="hebrew">Hebrew</option>
       </select>
+    </div>
 
-      <h2>Time Zone</h2>
+      <h3>Your converted date:</h3>
+
+      <h2 style="color: #fc5c0d;">Time Zone</h2>
       <h3>Time 1</h3>
       <h3>Time 2</h3>
     </body>

@@ -1,1 +1,23 @@
-
+body{
+        font-size: 12vh;
+        font-family: Geneva;    
+        color: #448d7f;
+        justify-content: center;
+}
+    
+.calendar {
+    font-size: 8vh;
+    color: #283e46;
+}
+    
+button {
+    justify-content: center;
+    padding-top: 4vh;
+    background-color: #93d0c2;
+    color: #fc5c0d;
+}
+    
+#button:hover {
+    cursor: pointer;
+    background-color: #71d2bc;
+}  
