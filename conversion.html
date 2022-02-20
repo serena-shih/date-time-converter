@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+<!------------------------------------STYLING-------------------------------------->
 <style>
     body{
         font-size: 4vh;
@@ -21,6 +23,8 @@
         height: 4vh;
     }
 </style>
+
+<!-------------------------------------HTML------------------------------------------>
 <html>
     <head>
       <title>Conversion</title>
@@ -28,9 +32,12 @@
       <h4 style="color: #93d0c2;">By Time Keepers</h4>
     </head>
     <body>
-      <h2 style="color: #fc5c0d;">Calendar</h2>
-      <h3>Your date in the Gregorian Calender:</h3>
 
+      <!--------------------------Calendar Converter-------------------------------->
+      <h2 style="color: #fc5c0d;">Calendar</h2>
+      <h4>Your date in the Gregorian Calender:</h4>
+
+      <!--Month drop-down-->
       <select class="calendar" name="month" id="month" onclick="monthSelect()">
         <option value="none">Select a month</option>
         <option value="1">January</option>
@@ -49,6 +56,7 @@
 
       <p id="demo"></p>
 
+      <!--Date drop-down-->
       <select class="calendar" name="day" id="day" onclick="daySelect()">
         <option value="none">Select a day</option>
           <option value="1">01</option>
@@ -86,6 +94,7 @@
 
       <p id="demo2"></p>
 
+      <!--Year drop-down-->
       <select class="calendar" name="year" id="year" onclick="yearSelect()">
         <option value="none">Select a year</option>
           <option value="1950">1950</option>
@@ -174,14 +183,15 @@
       <p id="demo3"></p>
 
       <button type="button" class="calendar" onclick="outputHebrew()">Convert to Hebrew</button>
-      <button type="button" class="calendar" onclick="outputHebrew()">Convert to Hijri</button>
+      <!-- <button type="button" class="calendar" onclick="outputHebrew()">Convert to Hijri</button> -->
 
-      <h3>Your converted date:</h3>
+      <!--Displays converted date-->
+      <h4>Your converted date:</h4>
 
       <p id="demo4"></p>
 
       <h2 style="color: #fc5c0d;">Time Zone</h2>
-      <h3>Your time and time zone:</h3>
+      <h4>Your time and time zone:</h4>
       <select class="calendar" name="time" id="time" onclick="setTime()">
             <option value="">Select a time</option>
             <option value="0">00:00</option>
@@ -297,7 +307,7 @@
       </select>
       </div>
       <button type="button" class="calendar" onclick="calculateTime()">Calculate time</button>
-      <h3>Your converted time:</h3>
+      <h4>Your converted time:</h4>
 
       <p id="convertedTime"> </p>
       
